@@ -13,6 +13,9 @@ namespace MauiAppHotel
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("JetBrainsMono-Bold.ttf", "JetBrainsMono");
+                    fonts.AddFont("JetBrainsMono-Italic.ttf", "JetBrainsMono-Italic");
+                    fonts.AddFont("JetBrainsMono-Light.ttf", "JetBrainsMonoLight");
                 });
 
 #if DEBUG

@@ -14,12 +14,14 @@
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="DFTGHFDGFGHFGH"
+                Text="ABCDEFGHIJKLMNOPQ"
+                FontFamily="JetBrainsMono"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
             <Label
-                Text=""
+                Text="ABCDEFGHIJKLMNOPQ"
+                FontFamily="JetBrainsMonoLight"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
@@ -27,6 +29,7 @@
             <Button
                 x:Name="CounterBtn"
                 Text="DUILER DA SILVA LEAL" 
+                FontFamily="JetBrainsMono"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill"  />
