@@ -10,7 +10,9 @@
 
         }
 
+#pragma warning disable CS8765 // A nulidade do tipo de parâmetro não corresponde ao membro substituído (possivelmente devido a atributos de nulidade).
         protected override Window CreateWindow(IActivationState activationState)
+#pragma warning restore CS8765 // A nulidade do tipo de parâmetro não corresponde ao membro substituído (possivelmente devido a atributos de nulidade).
         {
             var window = base.CreateWindow(activationState);
 

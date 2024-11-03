@@ -61,7 +61,8 @@
                              x:Name="stp_criancas"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1" 
+                             Increment="1"                             
+                             
                              />
                 </Grid>
 
@@ -78,7 +79,8 @@
                                />
 
                         <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação"
+                                Title="Selecione sua Acomodação"                                
+                                FontFamily="JetBrainsMono"                                
                                 />
                     </VerticalStackLayout>
                 </Frame>
@@ -123,12 +125,28 @@
                                         />
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
+                    
                 </Frame>
-
-                <Button Text="Próximo"
+                <StackLayout Padding="15">
+                    <Button Text="Avançar"
                         FontSize="20"
                         FontFamily="JetBrainsMono"
+                        Padding="20"  
+                        BackgroundColor="Magenta"
                         />
+                </StackLayout>
+
+                <StackLayout Padding="15">
+                    <Button Text="Sobre" 
+                        Clicked="Button_Clicked"
+                        Padding="20"
+                        FontSize="20"
+                        FontFamily="JetBrainsMono"
+                        BackgroundColor="Cyan"
+                        />
+                </StackLayout>
+
+
 
             </VerticalStackLayout>
         </Frame>

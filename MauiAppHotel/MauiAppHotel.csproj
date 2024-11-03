@@ -57,9 +57,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\logo1.png" />
+	  <MauiImage Remove="Resources\Images\logo2.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Fonts\JetBrainsMono-Bold.ttf" />
 	  <None Remove="Resources\Fonts\JetBrainsMono-Italic.ttf" />
 	  <None Remove="Resources\Fonts\JetBrainsMono-Light.ttf" />
+	  <None Remove="Resources\Images\logo for a beginner systems developer.png" />
+	  <None Remove="Resources\Images\logo1.png" />
+	  <None Remove="Resources\Images\logo1.png.png" />
+	  <None Remove="Resources\Images\logo2.png" />
+	  <None Remove="Resources\Images\logo_1.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -73,6 +83,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Sobre.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
