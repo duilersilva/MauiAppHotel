@@ -68,8 +68,8 @@
 	  <None Remove="Resources\Images\logo for a beginner systems developer.png" />
 	  <None Remove="Resources\Images\logo1.png" />
 	  <None Remove="Resources\Images\logo1.png.png" />
+	  <None Remove="Resources\Images\logo2.jpg" />
 	  <None Remove="Resources\Images\logo2.png" />
-	  <None Remove="Resources\Images\logo_1.png" />
 	</ItemGroup>
 
 	<ItemGroup>

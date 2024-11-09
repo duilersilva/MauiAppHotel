@@ -10,7 +10,7 @@
     <ScrollView>
         <StackLayout Padding="20" Spacing="30">
 
-            <Image Source="logo_1.png" HorizontalOptions="Center" HeightRequest="150"
+            <Image Source="logo2.jpg" HorizontalOptions="Center" HeightRequest="150"
                    />
 
             <Label Text="Desenvolvido por : " FontSize="15"  HorizontalOptions="Center"

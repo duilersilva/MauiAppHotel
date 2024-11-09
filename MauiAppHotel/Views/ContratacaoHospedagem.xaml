@@ -12,11 +12,11 @@
                          Spacing="10"
                          >
 
-        <Label Text="Cálculo da Diária"
-               FontFamily="JetBrainsMono"
-               FontSize="35"
-               TextColor="{StaticResource White}" 
+        <Label Text="Cálculo da Diária"               
+               FontSize="45"
+               TextColor="{StaticResource Magenta}" 
                HorizontalTextAlignment="Center"
+               Padding="20"
                
                />
 
@@ -108,7 +108,7 @@
                             <DatePicker x:Name="dtpck_checkin"
                                         Format="dd/MM/yyyy" 
                                         FontFamily="JetBrainsMono-Italic"
-                                        FontSize="20"
+                                        FontSize="Body"
                                         />
                         </HorizontalStackLayout>
 
@@ -121,7 +121,7 @@
                             <DatePicker x:Name="dtpck_checkout"
                                         Format="dd/MM/yyyy" 
                                         FontFamily="JetBrainsMono-Italic"
-                                        FontSize="20"
+                                        FontSize="Body"
                                         />
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
@@ -133,6 +133,7 @@
                         FontFamily="JetBrainsMono"
                         Padding="20"  
                         BackgroundColor="Magenta"
+                        Clicked="Button_Clicked_1"
                         />
                 </StackLayout>
 
@@ -150,6 +151,8 @@
 
             </VerticalStackLayout>
         </Frame>
+
+        
 
     </VerticalStackLayout>
 

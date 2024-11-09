@@ -6,9 +6,17 @@ public partial class Sobre : ContentPage
 	{
 		InitializeComponent();
 	}
-
-    private async void Button_Clicked(object sender, EventArgs e)
+    //PopAsync para o botao de voltar ficou mais agil
+    private void Button_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new ContratacaoHospedagem());
+        try
+        {
+            Navigation.PopAsync();
+
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "Ok");
+        }
     }
 }
