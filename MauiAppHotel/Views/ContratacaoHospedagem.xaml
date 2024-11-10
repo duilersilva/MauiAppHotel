@@ -22,21 +22,25 @@
 
         <Frame Padding="10"
                >
-            <VerticalStackLayout>
+            <VerticalStackLayout >
                 <Grid RowDefinitions="Auto, Auto"
-                      ColumnDefinitions="*, *, 2*"
+                      ColumnDefinitions="*, *, 2*"                      
                       >
 
                     <Label Grid.Row="0" Grid.Column="0"
                            Text="Adultos:"
                            FontFamily="JetBrainsMono"
                            FontSize="Body"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
                            />
 
                     <Label Grid.Row="0" Grid.Column="1"
                            TextColor="{StaticResource Magenta}"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
                            />
 
                     <Stepper Grid.Row="0" Grid.Column="2"
@@ -44,54 +48,49 @@
                              Minimum="0"
                              Maximum="10"
                              Increment="1" 
+                             HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="CenterAndExpand"
                              />
 
                     <Label Grid.Row="1" Grid.Column="0"
                            Text="Crianças:" 
                            FontFamily="JetBrainsMono"
                            FontSize="Body"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
                            />
 
                     <Label Grid.Row="1" Grid.Column="1"
                            TextColor="{StaticResource Magenta}"
                            Text="{Binding Value}"
-                           BindingContext="{x:Reference stp_criancas}"/>
+                           BindingContext="{x:Reference stp_criancas}"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"/>
 
                     <Stepper Grid.Row="1" Grid.Column="2"
                              x:Name="stp_criancas"
                              Minimum="0"
                              Maximum="10"
-                             Increment="1"                             
-                             
+                             Increment="1"
+                             HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="CenterAndExpand"                                                  
                              />
                 </Grid>
-
-                <Frame Padding="10" Margin="10"
-                       >
+                <Label Text="Escolha sua Suíte"
+                           TextTransform="Uppercase"
+                           FontFamily="JetBrainsMono"
+                           FontSize="Subtitle"
+                           TextColor="{StaticResource Magenta}"
+                           HorizontalOptions="Center"/>
+                    <Picker x:Name="pck_quarto"
+                            Title="Selecione sua Acomodação"                                
+                            FontFamily="JetBrainsMono"     
+                            ItemDisplayBinding="{Binding Descricao}"
+                            />
+                
+                <Frame Padding="10" 
+                       Margin="10">
                     <VerticalStackLayout>
-
-                        <Label Text="Escolha sua Suíte"
-                               TextTransform="Uppercase"
-                               FontFamily="JetBrainsMono"
-                               FontSize="Subtitle"
-                               TextColor="{StaticResource Magenta}"
-                               HorizontalOptions="Center"                               
-                               />
-
-                        <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação"                                
-                                FontFamily="JetBrainsMono"                                
-                                />
-                    </VerticalStackLayout>
-                </Frame>
-
-                <Frame Padding="10"
-                       Margin="10"
-                       >
-                    <VerticalStackLayout 
-                        Spacing="10"
-                        >
-
                         <Label Text="Período da Estadia"
                                TextTransform="Uppercase"
                                FontFamily="JetBrainsMono"
@@ -99,8 +98,8 @@
                                TextColor="{StaticResource Magenta}"
                                HorizontalOptions="Center"
                                />
-
-                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                        
+                        <HorizontalStackLayout HorizontalOptions="Center">
                             <Label Text="Check-in : "
                                    FontFamily="JetBrainsMono-Italic"
                                    FontSize="25"
@@ -109,10 +108,11 @@
                                         Format="dd/MM/yyyy" 
                                         FontFamily="JetBrainsMono-Italic"
                                         FontSize="Body"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         />
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                        <HorizontalStackLayout HorizontalOptions="Center">
                             <Label Text="Check-out : "
                                    FontFamily="JetBrainsMono-Italic"
                                    FontSize="25"
