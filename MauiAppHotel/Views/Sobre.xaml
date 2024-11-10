@@ -4,47 +4,49 @@
              x:Class="MauiAppHotel.Views.Sobre"
              Title="Sobre"
              NavigationPage.HasNavigationBar="False"             
-             BackgroundColor="{StaticResource Black}"
-          
-             >
+             BackgroundColor="{StaticResource Black}" >
     <ScrollView>
-        <StackLayout Padding="20" Spacing="30">
+        
+            <StackLayout Padding="20" Spacing="30">
 
-            <Image Source="logo2.jpg" HorizontalOptions="Center" HeightRequest="150"
+                <Image Source="logo2.jpg" HorizontalOptions="Center" HeightRequest="150"
                    />
 
-            <Label Text="Desenvolvido por : " FontSize="15"  HorizontalOptions="Center"
+                <Label Text="Desenvolvido por : " FontSize="15"  HorizontalOptions="Center"
                    FontFamily="JetBrainsMonoLight"
                    TextColor="Cyan"/>
-            <Label Text="Duiler da Silva Leal" FontSize="25" HorizontalOptions="Center"
-                   FontFamily="JetBrainsMono-Italic"/>            
-            <Label Text="Contato" FontSize="Medium" FontAttributes="Bold"
+                <Label Text="Duiler da Silva Leal" FontSize="25" HorizontalOptions="Center"
+                   FontFamily="JetBrainsMono-Italic"/>
+
+                <Label Text="Contato" FontSize="Medium" FontAttributes="Bold"
                    FontFamily="JetBrainsMonoLight"
                    TextColor="Cyan"
                    HorizontalOptions="CenterAndExpand"/>
-            <Label Text="Email: duiler.leal@etec.sp.gov.br" FontSize="Small"
+                <Label Text="Email: duiler.leal@etec.sp.gov.br" FontSize="Small"
                    FontFamily="JetBrainsMonoLight"
                    HorizontalOptions="CenterAndExpand"/>
 
-            <Label Text="Telefone: +55 (11) 1234-5678" FontSize="Small"
+                <Label Text="Telefone: +55 (11) 1234-5678" FontSize="Small"
                    FontFamily="JetBrainsMonoLight"
                    HorizontalOptions="CenterAndExpand"/>
-             
-            <Label Text="App para gerenciamento de um hotel "  FontSize="Small"
+
+
+                <Label Text="App para gerenciamento de um hotel "  FontSize="Small"
                    FontFamily="JetBrainsMonoLight"
                    HorizontalOptions="CenterAndExpand"/>
-            <Label Text="Projeto em desenvolvimento !!!" FontSize="Small"
+                <Label Text="Projeto em desenvolvimento !!!" FontSize="Small"
                    FontFamily="JetBrainsMonoLight"
                    HorizontalOptions="CenterAndExpand"/>
-            <Button Text="Voltar" 
+                <Button Text="Voltar" 
                 Clicked="Button_Clicked"
                 Padding="20"
                 FontSize="20"
                 FontFamily="JetBrainsMono"
                 BackgroundColor="Cyan"
                 />
-        </StackLayout>
+            </StackLayout>
+
         
-        
+
     </ScrollView>
 </ContentPage>

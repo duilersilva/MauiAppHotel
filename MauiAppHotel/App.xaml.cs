@@ -46,8 +46,8 @@ namespace MauiAppHotel
         {
             var window = base.CreateWindow(activationState);
 
-            window.Width = 400;
-            window.Height = 700;
+            window.Width = 480;
+            window.Height = 750;
 
             return window;
         }
